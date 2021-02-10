@@ -1,11 +1,12 @@
 ---
-title: Getting Started (Node SDK)
+title: Getting Started with the Node SDK
 date: Last Modified
 permalink: tutorials/getting-started-node-sdk/index.html
 eleventyNavigation:
   key: TutorialsGettingStartedNodeSdk
   order: 24
-  title: Getting Started (Node)
+  parent: TutorialsGettingStarted
+  title: Node
 ---
 
 ## Introduction

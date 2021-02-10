@@ -5,7 +5,7 @@ permalink: about/index.html
 eleventyNavigation:
   key: About
   order: 99
-  title: About Kintegrate.
+  title: About Kintegrate
 ---
 
 # This is the About Page!

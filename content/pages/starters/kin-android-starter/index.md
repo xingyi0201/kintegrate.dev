@@ -4,8 +4,9 @@ date: Last Modified
 permalink: starters/kin-android-starter/index.html
 eleventyNavigation:
   key: KinAndroidStarter
-  order: 31
-  title: Kin Android Starter
+  order: 41
+  parent: Starters
+  title: Android
 ---
 
 ## Introduction

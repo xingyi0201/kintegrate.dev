@@ -4,8 +4,9 @@ date: Last Modified
 permalink: starters/kin-ios-starter/index.html
 eleventyNavigation:
   key: KiniOSStarter
-  order: 33
-  title: Kin iOS Starter
+  order: 43
+  parent: Starters
+  title: iOS
 ---
 
 ## Introduction

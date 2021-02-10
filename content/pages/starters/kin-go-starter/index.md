@@ -4,8 +4,9 @@ date: Last Modified
 permalink: starters/kin-go-starter/index.html
 eleventyNavigation:
   key: KinGoStarter
-  order: 32
-  title: Kin Go Starter
+  order: 42
+  parent: Starters
+  title: Go
 ---
 
 ## Introduction

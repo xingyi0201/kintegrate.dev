@@ -1,11 +1,12 @@
 ---
-title: Getting Started (Android SDK)
+title: Getting Started with the Android SDK
 date: Last Modified
 permalink: tutorials/getting-started-android-sdk/index.html
 eleventyNavigation:
   key: TutorialsGettingStartedAndroidSdk
   order: 21
-  title: Getting Started (Android)
+  parent: TutorialsGettingStarted
+  title: Android
 ---
 
 ## Introduction

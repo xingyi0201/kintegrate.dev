@@ -4,8 +4,9 @@ date: Last Modified
 permalink: starters/kin-node-starter/index.html
 eleventyNavigation:
   key: KinNodeStarter
-  order: 34
-  title: Kin Node Starter
+  order: 44
+  parent: Starters
+  title: Node
 ---
 
 ## Introduction

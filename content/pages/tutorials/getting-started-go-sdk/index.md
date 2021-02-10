@@ -1,11 +1,12 @@
 ---
-title: Getting Started (Go SDK)
+title: Getting Started with the Go SDK
 date: Last Modified
 permalink: tutorials/getting-started-go-sdk/index.html
 eleventyNavigation:
   key: TutorialsGettingStartedGoSdk
   order: 22
-  title: Getting Started (Go)
+  parent: TutorialsGettingStarted
+  title: Go
 ---
 
 ## Introduction

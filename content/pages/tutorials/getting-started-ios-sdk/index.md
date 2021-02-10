@@ -1,11 +1,12 @@
 ---
-title: Getting Started (iOS SDK)
+title: Getting Started with the iOS SDK
 date: Last Modified
 permalink: tutorials/getting-started-ios-sdk/index.html
 eleventyNavigation:
   key: TutorialsGettingStartediOSSdk
   order: 23
-  title: Getting Started (iOS)
+  parent: TutorialsGettingStarted
+  title: iOS
 ---
 
 ## Introduction
