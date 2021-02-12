@@ -1,4 +1,4 @@
-const autoprefixer = require('autoprefixer');
+const autoprefixer = require('autoprefixer')
 
 module.exports = {
   important: true,
@@ -8,7 +8,7 @@ module.exports = {
   },
   purge: {
     enabled: true,
-    content: ["_site/**/*.html"],
+    content: ['_site/**/*.html'],
     options: {
       safelist: [],
     },
@@ -26,7 +26,7 @@ module.exports = {
             a: {
               color: '#1D4ED8',
               '&:hover': {
-              color: '#1E3A8A',
+                color: '#1E3A8A',
               },
             },
             '.prose a.edit, .tag a': {
@@ -37,26 +37,23 @@ module.exports = {
               '::before': {
                 display: 'none',
                 'text-decoration': 'none',
-              }
+              },
             },
             'ul.contains-task-list': {
               '::before': {
                 display: 'none',
-              }
+              },
             },
             'ul.spacelog': {
               '::before': {
                 display: 'none',
-              }
+              },
             },
           },
         },
-      }
+      },
     },
-  }, 
+  },
   variants: {},
-  plugins: [
-    require('@tailwindcss/typography'),
-    require('@tailwindcss/forms'),
-  ],
+  plugins: [require('@tailwindcss/typography'), require('@tailwindcss/forms')],
 }
