@@ -251,6 +251,45 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
+"@code-blocks/eleventy-plugin@^0.1.7":
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/@code-blocks/eleventy-plugin/-/eleventy-plugin-0.1.7.tgz#6e0d1d906ef8d0b00dd31374a482a52eab70dc14"
+  integrity sha512-EnFKSq/PIQOSuh0AiCj7Dg6EIQ08/aRKJ78sLcBI4MUKuaxKP+hrAWqWKmTIoYWBwKWEwafxs67kYT8tDMTVqQ==
+  dependencies:
+    "@code-blocks/from-html" "^0.1.0"
+    "@code-blocks/types" "^0.1.0"
+
+"@code-blocks/from-html@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@code-blocks/from-html/-/from-html-0.1.0.tgz#8661b31764759463b32035fb5df673f02beac07f"
+  integrity sha512-Ing4LLXpUKWINY4sOx/wQtM7+XaOnXlO0+E+qW11dUWetQvE6Q/5H2gOrMldYaF6e3eOTHc9ruuoNz6Ly9ZY+Q==
+  dependencies:
+    "@code-blocks/types" "^0.1.0"
+    ramda "^0.27.0"
+
+"@code-blocks/graphviz@^0.1.6":
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/@code-blocks/graphviz/-/graphviz-0.1.6.tgz#67d68a120392f134bb5ab3de564aabdd133405fd"
+  integrity sha512-U/LN+FecDfYeqmsc8Ya3mkAsPsJizJZ/DZgVSNLcx8FbbJxObcOPfVo76iYa9vM5jTqaiRkkZsZvP1Yvt7OoNQ==
+  dependencies:
+    "@code-blocks/parser" "^0.1.0"
+    "@code-blocks/types" "^0.1.0"
+    parse5 "^6.0.1"
+    viz.js "^2.1.2"
+
+"@code-blocks/parser@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@code-blocks/parser/-/parser-0.1.0.tgz#4007515e5e3d6dcf047ce35959b657758dc69f15"
+  integrity sha512-6B75spGI2yDOUJEF0MGtkjqLtjZjAkIrpz1AidstQTnioOY9IM1XRvm36uIH9Xypi0CFnhdqYZkImfYUJBwfHA==
+  dependencies:
+    front-matter "^4.0.2"
+    ramda "^0.27.0"
+
+"@code-blocks/types@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@code-blocks/types/-/types-0.1.0.tgz#095f488c0a4026f9add93cde523390b2400e29a3"
+  integrity sha512-a3Tm5JuN2xabYgePVjF8uX93efjyhHig+7w5ocvGJg9IQhWtGG96I0Bst1kBDB3DEbEFHDpEuKIgszzUlN6Tyg==
+
 "@eslint/eslintrc@^0.3.0":
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@eslint/eslintrc/-/eslintrc-0.3.0.tgz#d736d6963d7003b6514e6324bec9c602ac340318"
@@ -2222,6 +2261,13 @@ fromentries@^1.2.0:
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/fromentries/-/fromentries-1.3.2.tgz#e4bca6808816bf8f93b52750f1127f5a6fd86e3a"
   integrity sha512-cHEpEQHUg0f8XdtZCc2ZAhrHzKzT0MrFUTcvx+hfxYu7rGMDc5SKoXFh+n4YigxsHXRzc6OrCshdR1bWH6HHyg==
+
+front-matter@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/front-matter/-/front-matter-4.0.2.tgz#b14e54dc745cfd7293484f3210d15ea4edd7f4d5"
+  integrity sha512-I8ZuJ/qG92NWX8i5x1Y8qyj3vizhXS31OxjKDu3LKP+7/qBgfIKValiZIEwoVoJKUHlhWtYrktkxV1XsX+pPlg==
+  dependencies:
+    js-yaml "^3.13.1"
 
 fs-constants@^1.0.0:
   version "1.0.0"
@@ -4479,6 +4525,11 @@ queue@6.0.1:
   dependencies:
     inherits "~2.0.3"
 
+ramda@^0.27.0:
+  version "0.27.1"
+  resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.27.1.tgz#66fc2df3ef873874ffc2da6aa8984658abacf5c9"
+  integrity sha512-PgIdVpn5y5Yns8vqb8FzBUEYn98V3xcPgawAkkgj0YJ0qDsnHCiNmZYfOGMgOvoB0eWFLpYbhxUR3mxfDIMvpw==
+
 range-parser@~1.2.0:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/range-parser/-/range-parser-1.2.1.tgz#3cf37023d199e1c24d1a55b84800c2f3e6468031"
@@ -5624,6 +5675,11 @@ verror@1.10.0:
     assert-plus "^1.0.0"
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
+
+viz.js@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/viz.js/-/viz.js-2.1.2.tgz#6f09cd4e10af28754a6d50b055bd2e4a7693983a"
+  integrity sha512-UO6CPAuEMJ8oNR0gLLNl+wUiIzQUsyUOp8SyyDKTqVRBtq7kk1VnFmIZW8QufjxGrGEuI+LVR7p/C7uEKy0LQw==
 
 void-elements@^2.0.1:
   version "2.0.1"
