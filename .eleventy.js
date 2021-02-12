@@ -8,6 +8,10 @@ const embedEverything = require('eleventy-plugin-embed-everything')
 const pluginTOC = require('eleventy-plugin-nesting-toc')
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation')
 const Image = require('@11ty/eleventy-img')
+
+const codeblocks = require('@code-blocks/eleventy-plugin')
+const graphviz = require('@code-blocks/graphviz')
+
 module.exports = function (eleventyConfig) {
   // eleventyConfig.addPlugin(pluginTOC);
   eleventyConfig.addPlugin(svgContents)
@@ -15,6 +19,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode('version', function () {
     return String(Date.now())
   })
+
+  eleventyConfig.addPlugin(codeblocks([graphviz]))
 
   // Responsive image shortcode
   eleventyConfig.addLiquidShortcode('image', async function (src, alt, sizes = '100vw') {
