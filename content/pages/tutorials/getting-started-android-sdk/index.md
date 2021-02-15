@@ -19,12 +19,12 @@ Make sure you have read [Getting Started](/tutorials/getting-started/) and have 
 
 
 ## Implementing Kin in your app
-1. Create an empty Android app and add the [Kin.kt](https://github.com/hitwill/kin-implementation-kotlin/blob/master/app/src/main/java/com/kin/kin/Kin.kt) class to your app
+1. Create an empty Android app and add the [Kin.kt](https://github.com/kintegrate/kin-starter-kotlin/blob/master/app/src/main/java/com/kin/kin/Kin.kt) class to your app
    * The class abstracts some of the calls to Kin's official SDK and is fully useable out of the box. However, you can easily extend it to suite your custom needs.
 
-2. Add the entry in [AndroidManifest.xml](https://github.com/hitwill/kin-implementation-kotlin/blob/master/quick-start/AndroidManifest.xml) to your app's manifest
+2. Add the entry in [AndroidManifest.xml](https://github.com/kintegrate/kin-starter-kotlin/blob/master/quick-start/AndroidManifest.xml) to your app's manifest
     * The entry just makes sure your app can connect to the internet, which it needs to, to send and receive transactions
-3. Add entries in [build.gradle](https://github.com/hitwill/kin-implementation-kotlin/blob/master/quick-start/build.gradle) to your app's gradle
+3. Add entries in [build.gradle](https://github.com/kintegrate/kin-starter-kotlin/blob/master/quick-start/build.gradle) to your app's gradle
     * The gradle file adds the official Kin SDK dependencies to your build
 4. Make sure `app_icon.png` exists in your `res\drawable` folder
     * This is for a future expansion of the SDK, although it is currently required for instantiation.
