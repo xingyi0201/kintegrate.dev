@@ -8,7 +8,7 @@ eleventyNavigation:
   title: Home
 ---
 
-# Introduction
+## Introduction
 
 This guide contains tutorials and samples to get your apps quickly integrated with Kin. The content here supplements [Kin's SDK documentation](https://docs.kin.org/intro), which gives a more technical overview of the ecosystem.
 

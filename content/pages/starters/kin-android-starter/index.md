@@ -40,7 +40,7 @@ Make sure you have read [Getting Started](/tutorials/getting-started/) and have 
 6. See [MainActivity.kt](https://github.com/kintegrate/kin-starter-kotlin/blob/master/quick-start/MainActivity.kt) for instantiation and sample calls
 
 ## Note on Webhooks
-Any transactions made by the device will alert your server with a webhook. (see server tutorials). Your server will receive a notification of the transaction, including `MyUser` and `MyPassword` credentials above. The credentails help your server track transactions from specific users.
+Any transactions made by the device will alert your server with a webhook. (see server tutorials). Your server will receive a notification of the transaction, including `MyUser` and `MyPassword` credentials above. The credentials help your server track transactions from specific users.
 
 However, you can safely test your device code without turning on your webhooks.
 
