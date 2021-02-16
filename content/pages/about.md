@@ -10,4 +10,4 @@ eleventyNavigation:
 
 ## Contribute
 
-Help us create this section. Please visit our github for [contributing details](https://github.com/kintegrate/homepage/blob/main/CONTRIBUTING.md).
+Help us create this section. Please visit our github for [contributing details](https://github.com/kintegrate/kintegrate.dev/blob/main/CONTRIBUTING.md).
