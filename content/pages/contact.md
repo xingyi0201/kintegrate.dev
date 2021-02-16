@@ -12,8 +12,6 @@ eleventyNavigation:
 
 ## Contact us
 
-
 We welcome all feedback.
 
-
-Visit our [github](https://github.com/kintegrate/homepage/blob/main/CONTRIBUTING.md) for details on how to reach us
+Visit our [github](https://github.com/kintegrate/kintegrate.dev/blob/main/CONTRIBUTING.md) for details on how to reach us
