@@ -29,7 +29,7 @@ Follow the steps below to prepare your app for Kin integration.
 
 4. Log on to [heroku](https://heroku.com/) or your preferred server and create a new blank server app. (5 minutes)
     * Save the **`server url`** to your variables list. E.g. `https://kin-server.herokuapp.com`
-    * Save a **`server webhook`** endpoint. E.g. `https://kin-server.herokuapp.com/kinTransactionEvents`
+    * Save a **`server webhook`** endpoint. E.g. `https://kin-server.herokuapp.com/kinWebHook`
      * Save a **`server events`** endpoint. E.g. `https://kin-server.herokuapp.com/kinTransactionEvents`
      * You can name the endpoints however you like.
      * Don't worry, we will create these in a later tutorial. We just need to know what their names are for now.
