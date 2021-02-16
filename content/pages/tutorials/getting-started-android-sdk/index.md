@@ -83,7 +83,7 @@ When a transaction takes place in the blockchain, it may take a minute to reflec
 This is the most conservative and recommended way to monitor balances and transactions. However, you can modify the function in the class to listen more aggressively, which will consume your app's resources.
 
 
-To test your listeners, runn your app, get its address, and send it some Kin in the `Test blockchain`. You can do that by pasting the app's address to `Kin Drops.`
+To test your listeners, run your app, get its address, and send it some Kin in the `Test blockchain`. You can do that by pasting the app's address to `Kin Drops.`
 https://kin-drops.herokuapp.com/?YOUR_APP_ADDRESS
 
 Calling `checkTransactions()` will give you the updated balance.
