@@ -7,6 +7,7 @@ const mdIterator = require('markdown-it-for-inline')
 const embedEverything = require('eleventy-plugin-embed-everything')
 const pluginTOC = require('eleventy-plugin-nesting-toc')
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation')
+const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 const Image = require('@11ty/eleventy-img')
 
 const codeblocks = require('@code-blocks/eleventy-plugin')
@@ -19,7 +20,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode('version', function () {
     return String(Date.now())
   })
-
+  eleventyConfig.addPlugin(syntaxHighlight)
   eleventyConfig.addPlugin(codeblocks([graphviz]))
 
   // Responsive image shortcode
