@@ -21,7 +21,7 @@ Make sure you have read [Getting Started](/tutorials/getting-started/) and have 
 
 1. Create an empty Android app and add the [Kin.kt](https://github.com/kintegrate/kin-starter-kotlin/blob/master/app/src/main/java/com/kin/kin/Kin.kt) class to your app
 
-   - The class abstracts some of the calls to Kin's official SDK and is fully useable out of the box. However, you can easily extend it to suite your custom needs.
+   - The class abstracts some of the calls to Kin's official SDK and is fully usable out of the box. However, you can easily extend it to suite your custom needs.
 
 2. Add the entry in [AndroidManifest.xml](https://github.com/kintegrate/kin-starter-kotlin/blob/master/quick-start/AndroidManifest.xml) to your app's manifest
    - The entry just makes sure your app can connect to the internet, which it needs to, to send and receive transactions
@@ -43,9 +43,9 @@ Make sure you have read [Getting Started](/tutorials/getting-started/) and have 
        ::paymentHappened //get notifications for payments
    )
    ```
-   - The `app index` and `public address` are used by the Kin foundation to track blockchain transactions your app makes, and also authorize fee-less transaxtions for your app.
+   - The `app index` and `public address` are used by the Kin foundation to track blockchain transactions your app makes, and also authorize fee-less transactions for your app.
 
-Contratualtions! You now have a Kin enabled app running!
+Congratulations! You now have a Kin enabled app running!
 
 ## Making calls to the Kin blockchain
 
@@ -79,10 +79,10 @@ private fun paymentHappened(payments: List<KinPayment>) {
 
 These are passive listeners to transactions on your Kin account. They will report changes in the balance:
 
-1. On instatiation (use this to grab your app's initial balance)
+1. On instantiation (use this to grab your app's initial balance)
 2. When your app makes an **outgoing** payment
 
-Note that it may take a minute or two for them to fire, after a payment has beeen made. In order to check if the balance has changed from an **incoming** payment, you need to call:
+Note that it may take a minute or two for them to fire, after a payment has been made. In order to check if the balance has changed from an **incoming** payment, you need to call:
 
 ```kotlin
 kin.checkTransactions()
@@ -129,13 +129,13 @@ The SDK will convert the invoice into a hash, save the payment items for future 
 
 ## Webhooks
 
-When your app sends a transaction, your server also recieves a notification with:
+When your app sends a transaction, your server also receives a notification with:
 
 1. The username and password of the specific device
 2. The amount of Kin the device spent
 3. The invoice details
 
-From here, you server can perform further actions, such as sending a loot box to the device. You can learn more about webhooks by going through the server tutorials.
+From here, your server can perform further actions, such as sending a loot box to the device. You can learn more about webhooks by going through the server tutorials.
 
 ## Congratulations
 
@@ -144,4 +144,4 @@ Your app is now set up to:
 1. Listen and display changes in Kin balance
 2. Send Kin
 
-The Kin SDK is extremely verstatile. We encourage you to look through the class to see how it has wrapped and implemented it. Make sure you go through the server tutorials, to see how to implement Kin on the server
+The Kin SDK is extremely versatile. We encourage you to look through the class to see how it has wrapped and implemented it. Make sure you go through the server tutorials, to see how to implement Kin on the server

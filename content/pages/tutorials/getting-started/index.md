@@ -24,13 +24,13 @@ Follow the steps below to prepare your app for Kin integration.
 
 2. Register your app [here](https://docs.google.com/forms/d/e/1FAIpQLSdz60FPmUB7qBq-TF7NNmRgM5W8wIqqL5oVHmMRbtBBXppv4Q/viewform). (2 minutes)
 
-   - Registed apps receive an `App Index` the foundation uses to track Kin activity. Developers are rewarded with Kin for creating activity with Kin in their apps. It may take 48 hours to receive your app.
-   - For now, use `165` for your `App Index`. Remember to update this as soon as you receive your email.
+   - Registered apps receive an **`App Index`** the foundation uses to track Kin activity. Developers are rewarded with Kin for creating activity with Kin in their apps. It may take 48 hours to receive your app.
+   - For now, use **`165`** for your **`App Index`**. Remember to update this as soon as you receive your email.
 
 3. Create your app `public key` and `private key` at the [Kin Laboratory](https://laboratory.kin.org/#account-creator?network=test). (1 minute)
 
    - Just hit Generate keypair and save both values.
-   - Your public key is your server's Kin address. (Also called public address). Your app will needs this to send Kin to your server.
+   - Your public key is your server's Kin address. (Also called public address). Your app will need this to send Kin to your server.
    - Keep your private key secret and never share it with anyone
 
 4. Log on to [heroku](https://heroku.com/) or your preferred server and create a new blank server app. (5 minutes)
