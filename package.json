@@ -24,7 +24,7 @@
     }
   },
   "lint-staged": {
-    "*.{js,json,css,scss,less,md,ts,html,graphql}": [
+    "*.{js,json,css,scss,less,md,ts,tsx,html,component.html,graphql}": [
       "yarn format"
     ]
   },
