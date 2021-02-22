@@ -26,6 +26,9 @@
   .prose strong {
     @apply dark:text-gray-400;
   }
+  .prose code {
+    @apply dark:text-indigo-300;
+  }
   .prose h2,
   .prose h3,
   .prose h4,
@@ -44,10 +47,8 @@
     @apply list-none -ml-6 !important;
   }
   .prose ul.contains-task-list .task-list-item,
-  .prose ul.spacelog {
-    ::before {
-      @apply hidden !important;
-    }
+  .prose ul.spacelog ::before {
+    @apply hidden !important;
   }
 
   /* Define blockquotes and some standard callout blocks */
@@ -146,7 +147,7 @@
     @apply flex justify-center;
   }
   .icon-spacer {
-    width: '24px';
+    width: 24px;
   }
   input {
     @apply dark:text-gray-400;

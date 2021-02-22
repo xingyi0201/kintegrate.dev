@@ -12,7 +12,7 @@ eleventyNavigation:
 
 This guide contains tutorials and samples to get your apps quickly integrated with Kin. The content here supplements [Kin's SDK documentation](https://docs.kin.org/intro), which gives a more technical overview of the ecosystem.
 
-However, the content here is designed to give you the main concepts you need to quickly set up Kin, with **the goal of 30 minute set ups** for your server and for your apps.
+However, the content here is designed to give you the main concepts you need to quickly set up Kin, with **the goal of 30 minute set-ups** for your server and for your apps.
 
 ### Who this for
 
