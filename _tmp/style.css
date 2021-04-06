@@ -525,9 +525,13 @@ video {
 
       [type='text'],
       [type='email'],
+      [type='url'],
       [type='password'],
+      [type='number'],
+      [type='date'],
       [type='search'],
       [type='time'],
+      [multiple],
       textarea,
       select
      {
@@ -546,7 +550,7 @@ video {
   line-height: 1.5rem;
 }
 
-[type='text']:focus, [type='email']:focus, [type='password']:focus, [type='search']:focus, [type='time']:focus, textarea:focus, select:focus {
+[type='text']:focus, [type='email']:focus, [type='url']:focus, [type='password']:focus, [type='number']:focus, [type='date']:focus, [type='search']:focus, [type='time']:focus, [multiple]:focus, textarea:focus, select:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
   --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
@@ -584,6 +588,30 @@ select {
           color-adjust: exact;
 }
 
+[multiple] {
+  background-image: initial;
+  background-position: initial;
+  background-repeat: unset;
+  background-size: initial;
+  padding-right: 0.75rem;
+  -webkit-print-color-adjust: unset;
+          color-adjust: unset;
+}
+
+[type='file'] {
+  background: unset;
+  border-color: inherit;
+  border-width: 0;
+  border-radius: 0;
+  padding: 0;
+  font-size: unset;
+  line-height: inherit;
+}
+
+[type='file']:focus {
+  outline: 1px auto -webkit-focus-ring-color;
+}
+
 /* Set up some default image behavior for nicer images */
 
 img {
@@ -615,6 +643,11 @@ img:hover {
 .dark .prose h1, .dark .prose h2, .dark .prose h3, .dark .prose h4, .dark .prose h5, .dark .prose h6 .prose hr, .dark .prose strong {
   --tw-text-opacity: 1;
   color: rgba(156, 163, 175, var(--tw-text-opacity));
+}
+
+.dark .prose code {
+  --tw-text-opacity: 1;
+  color: rgba(165, 180, 252, var(--tw-text-opacity));
 }
 
 .prose h2,
@@ -659,6 +692,34 @@ blockquote {
   border-radius: 0.5rem;
   border-left-width: 8px;
   padding: 1rem;
+}
+
+.warning {
+  --tw-bg-opacity: 1;
+  background-color: rgba(153, 27, 27, var(--tw-bg-opacity));
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  --tw-text-opacity: 1;
+  color: rgba(249, 250, 251, var(--tw-text-opacity));
+}
+
+.dark .warning, .dark .warning strong, .dark .warning em {
+  --tw-bg-opacity: 1;
+  background-color: rgba(127, 29, 29, var(--tw-bg-opacity));
+}
+
+.warning, .warning strong, .warning em {
+  --tw-text-opacity: 1;
+  color: rgba(249, 250, 251, var(--tw-text-opacity));
+}
+
+.dark .warning, .dark .warning strong, .dark .warning em {
+  --tw-text-opacity: 1;
+  color: rgba(229, 231, 235, var(--tw-text-opacity));
 }
 
 /* Overrides for nav/Table of Contents block */
@@ -1930,6 +1991,10 @@ nav ul li a.active {
 
 .visible {
   visibility: visible !important;
+}
+
+.invisible {
+  visibility: hidden !important;
 }
 
 .w-6 {
