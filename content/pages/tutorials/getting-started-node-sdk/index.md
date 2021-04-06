@@ -99,7 +99,7 @@ await sleepAndPrintBalances()
 
 #### 6. Request Airdrop
 
-We can now request and Airdrop for both of our token accounts.
+We can now request and Airdrop for both of our token accounts. Note that this is only for the `Test` network.
 
 In this example we'll request 10 Kin for both Alice and Bob.
 
