@@ -50,7 +50,7 @@ However, you can safely test your device code without turning on your webhooks.
 A demo App is included that you can run and test. To use the app:
 
 1. Pull https://github.com/kintegrate/kin-starter-kotlin into a local folder
-2. Access the `/demo` folder to your local.
+2. Access the `/demo` folder on your local.
 3. Open in android studio and click run to emulate it. The app runs on Kin's test network and will display its Kin blockchain address on startup, which will have 0 Kin.
 
 ### Kin Drops
