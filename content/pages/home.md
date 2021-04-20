@@ -63,3 +63,11 @@ Wrapper files for the server enable your server to:
 
 1. Send Kin to your apps
 2. Listen for transactions your apps make and reward them accordingly
+
+## Support us by donating Kin
+
+<div>
+Support us by Donating Kin to <a
+ target="_blank"
+ class="font-mono text-indigo-500"
+  href="https://explorer.solana.com/address/Don8L4DTVrUrRAcVTsFoCRqei5Mokde3CV3K9Ut4nAGZ">Don8L4DTVrUrRAcVTsFoCRqei5Mokde3CV3K9Ut4nAGZ</a></div>
