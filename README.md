@@ -25,7 +25,7 @@ Make sure you have read [Getting Started](https://kintegrate.dev/tutorials/getti
 4. Make sure `app_icon.png` exists in your `res\drawable` folder
 5. Import and instantiate the class in any `activity`.
    - Instantiation requires several variables from the getting started section:
-   ```kotlin
+   ```java
    Kin kin = new Kin(
             this.getApplicationContext(), //Application context
             false, //In Production mode
