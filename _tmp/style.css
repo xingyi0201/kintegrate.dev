@@ -1582,6 +1582,10 @@ nav ul li a.active {
   clear: right !important;
 }
 
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+}
+
 .font-normal {
   font-weight: 400 !important;
 }
@@ -1935,6 +1939,11 @@ nav ul li a.active {
 .text-gray-600 {
   --tw-text-opacity: 1 !important;
   color: rgba(75, 85, 99, var(--tw-text-opacity)) !important;
+}
+
+.text-indigo-500 {
+  --tw-text-opacity: 1 !important;
+  color: rgba(99, 102, 241, var(--tw-text-opacity)) !important;
 }
 
 .hover\:text-gray-600:hover {
