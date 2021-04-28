@@ -1,12 +1,12 @@
 ---
-title: Getting Started with the Android SDK
+title: Getting Started with the Android SDK (Kotlin)
 date: Last Modified
 permalink: tutorials/getting-started-android-sdk/index.html
 eleventyNavigation:
-  key: TutorialsGettingStartedAndroidSdk
+  key: TutorialsGettingStartedAndroidSdkKotlin
   order: 21
   parent: TutorialsGettingStarted
-  title: Android
+  title: AndroidKotlin
 ---
 
 ## Introduction
