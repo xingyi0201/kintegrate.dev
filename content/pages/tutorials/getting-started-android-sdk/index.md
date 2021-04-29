@@ -6,7 +6,7 @@ eleventyNavigation:
   key: TutorialsGettingStartedAndroidSdkKotlin
   order: 21
   parent: TutorialsGettingStarted
-  title: AndroidKotlin
+  title: Android (Kotlin)
 ---
 
 ## Introduction

@@ -22,4 +22,8 @@ Place the tutorials in this directory: https://github.com/kintegrate/kintegrate.
 
 When you add your file, remember to add the [meta-data](https://spacebook.app/getting-started/content/index.htm) as well. (See sibling pages in each directory for examples)
 
+
+Once you create a pull request, you can [preview it](https://www.netlify.com/blog/2016/07/20/introducing-deploy-previews-in-netlify/) after waiting a few seconds. 
+
+
 To help coordinate contributions, please join our discord channel at: https://discord.gg/kdRyUNmHDn

@@ -6,7 +6,7 @@ eleventyNavigation:
   key: KinJavaStarter
   order: 1
   parent: Starters
-  title: Java
+  title: Android (Java)
 ---
 
 ## Introduction
