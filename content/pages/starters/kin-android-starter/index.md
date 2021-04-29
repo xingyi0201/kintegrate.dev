@@ -6,7 +6,7 @@ eleventyNavigation:
   key: KinAndroidStarter
   order: 41
   parent: Starters
-  title: Android
+  title: Android (Kotlin)
 ---
 
 ## Introduction

@@ -6,7 +6,7 @@ eleventyNavigation:
   key: TutorialsGettingStartedAndroidSdkJava
   order: 1
   parent: TutorialsGettingStarted
-  title: AndroidJava
+  title: Android (Java)
 ---
 
 ## Introduction
