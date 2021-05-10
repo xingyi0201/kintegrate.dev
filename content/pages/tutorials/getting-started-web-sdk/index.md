@@ -13,11 +13,13 @@ eleventyNavigation:
 
 This tutorial will take you through the basics of creating a Kin enabled app using `@kin-sdk/client`.
 
+> The fastest way to get started is by using one of our [Kin Web SDK Starters](/starters/kin-web-starter)
+
 ## Requirements
 
 ## Implementing Kin in your app
 
-#### 1. Install the Kin Web SDK to your project:
+#### 1. Install the dependencies:
 
 ```shell
 npm install @kin-sdk/client
@@ -25,60 +27,77 @@ npm install @kin-sdk/client
 yarn add @kin-sdk/client
 ```
 
-#### 2. Create a React app and add the
-
-This class abstracts some calls to Kin's official SDK and is fully usable out of the box. However, you can easily extend it to suite your custom needs.
-
-#### 3. Instantiate a new Kin client
+#### 2. Instantiate a new Kin client
 
 We're creating a new instance of our Kin wrapper and pass in the environment. In this example we'll pick the Test network.
 
 ```typescript
-// Import KinClient and the Kin environment object
-import { KinClient, KinTest } from '@kin-sdk/client'
-// Set up Kin client
-const kin = new KinClient(KinTest)
+// Import the client
+import { KinClient, KinProd } from '@kin-sdk/client'
+// Create instance of client
+const client = new KinClient(KinProd)
 ```
 
-### Congratulations! You now have a Kin enabled app running!
 
-## Making calls to the Kin blockchain
-
-In this example, we're going to create a new wallet for both Alice and Bob by generating new key pair. After the wallet is created, Alice will send a P2P transaction to Bob.
-
-#### 4. Create account for Alice
-
-We create a new private key-pair for Alice, then call into our wrapper to create a new account. After creation, we log out the public address of both the wallet, and the token accounts
+The first thing you need to do is import the `KinClient` and environment (`KinProd` or `KinTest`) into your project, and initialize a new instance of the client:
 
 ```typescript
-const account = KinClient.createWallet('create', { name: 'Alice' })
+// Import the client
+import { KinClient, KinProd } from '@kin-sdk/client'
+// Create instance of client
+const client = new KinClient(KinProd)
+```
 
-const [res, err] = await client.createAccount(account.secret!)
+### Step 3: Generate a new key pair
 
-if (err) {
-  throw new Error(`Could not create account`)
+In order to interact with the blockchain you need a key pair that consists of a `secret` and `publicKey`.
+
+This account will generally be stored on the users' device, for instance using `IndexedDB`. Make sure that the user has a way to export their secret, so they won't lose access to their Kin.
+
+```typescript
+// Generate a new 'account' or 'key-pair'
+const account = KinClient.createWallet('create', { name: 'Account 1' })
+```
+
+### Step 4: Create an account on Kin blockchain
+
+Use the `secret` of the account you generated in the previous step to create the account on the blockchain.
+
+> Creating the account may take a little while (up to 30 seconds, possibly longer on a busy moment) after the `result` above has been returned. You can use the `resolveTokenAccounts` method (see next step) to make sure the account is in fact created. As soon as the account is created correctly, the `resolveTokenAccounts` method will return the address with the balance.
+
+```typescript
+const [result, error] = await client.createAccount(account.secret)
+if (error) {
+  console.error(error)
 }
-
-console.lg(res)
 ```
 
-#### 5. Request Airdrop
+### Step 5: Resolve token Accounts
 
-We can now request and Airdrop for both of our token accounts. Note that this is only for the `Test` network.
-
-In this example we'll request 10 Kin for both Alice and Bob.
+The next step is resolving the token accounts. A token account is where the Kin is actually stored, as Kin is a token on the Solana blockchain. You can [read more details here](https://docs.kin.org/solana#token-accounts).
 
 ```typescript
-console.log('Request Airdrop for Alice')
-await kin.requestAirdrop(account.publicKey, '10')
+// Resolve token Accounts
+const accounts = await client.resolveTokenAccounts(account.publicKey)
 ```
 
-#### 6. Send payment from Alice
+### Step 6: Submit a payment.
 
-Now we can send a payment from one account to the other.
+After this is done, you are ready to submit a payment.
+
+The memo field here is optional, the other fields are required.
 
 ```typescript
-console.log('Submit P2P Payment from Alice to Bob')
-const dest = `Don8L4DTVrUrRAcVTsFoCRqei5Mokde3CV3K9Ut4nAGZ`
-await kin.sendPayment(account.secret, dest, '10', 'My donation')
+const secret = account.secret
+const tokenAccount = account.publicKey
+const amount = '1'
+const destination = 'Don8L4DTVrUrRAcVTsFoCRqei5Mokde3CV3K9Ut4nAGZ'
+const memo = 'One Kin as a Donation'
+await client.submitPayment({
+  secret,
+  tokenAccount,
+  amount,
+  destination,
+  memo,
+})
 ```
