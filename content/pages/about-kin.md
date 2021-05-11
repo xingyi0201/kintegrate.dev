@@ -8,8 +8,7 @@ eleventyNavigation:
   title: What is Kin?
 ---
 
-# What is Kin
-
+# Introduction
 Simply put, Kin is money for the digital world, and it provides a way for developers (like you) to monetize their apps and websites in a fundamentally new way.
 
 Kin’s vision is to create an ecosystem of apps where value is exchanged in Kin. Value is anything that is meaningful to a user. For example, a user liking a post could tip an amount of Kin as appreciation.
@@ -94,7 +93,7 @@ Using Kin is as simple as:
 # How do I get started?
 The following resources will help you add Kin to your app.
 
-1.  [Kintegrate](/) is a developer maintained site that helps you quickly integrate Kin into your apps. We recommend [starting here](/) to get a broad understanding of integration.
+1.  [Kintegrate](/) is a developer maintained site that helps you quickly integrate Kin into your apps. We recommend [starting here](/tutorials/getting-started/) to get a broad understanding of integration.
     
 2.  [Kin’s official documentation](https://docs.kin.org/intro) deep dives into client and server architecture, with more detailed concepts covered
     
