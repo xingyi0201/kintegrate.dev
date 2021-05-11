@@ -8,12 +8,12 @@ eleventyNavigation:
   title: What is Kin?
 ---
 
-# Introduction
+## Introduction
 Simply put, Kin is money for the digital world, and it provides a way for developers (like you) to monetize their apps and websites in a fundamentally new way.
 
 Kin’s vision is to create an ecosystem of apps where value is exchanged in Kin. Value is anything that is meaningful to a user. For example, a user liking a post could tip an amount of Kin as appreciation.
 
-# Example Use-cases
+## Example Use-cases
 |Premium content |Tipping     |Game currency  |
 |----------|---------------|-------|
 |<img width="508" src="https://lh5.googleusercontent.com/1_sJjnZVTT8EJVb_MTcY2mHR3FsZO6bI1bDx4Kl_a4iGFXihWNMFQawQfT0ddNRutMZ9LY8-S8hOO3Maotk72ghEVHfVQbNFNdr0ySIRT-80MkR9OGxhezuXSb4smlzo4LRcTKtD"> |  <img width="508" src="https://lh3.googleusercontent.com/fZRzvvvjk1xrt3pkZaA7uFPc-V5Rsswe1JivHfalPhSJMnhN-RVJCPqMdL4BVheMhc0tBE2AEs1wIg0t8dabqpD9SnpbkeOuL-TszrF9TglgHm9B0p1ST19gMFJI2WOE4XL3II7s"> | <img width="508" src="https://lh6.googleusercontent.com/0a7z5BDhhrPLibS1b3LU3i26eb_wEJGX-psIGAVVj1Q_yW1fWxfB1lSCoJ96_7FJw9EIJ2WkCLxekY250lko4MYvLGmmDrJ6IjvUelzwH_W4Mnu6-H8rnQKG2YI0f5c4TILJsTho"> |
@@ -23,7 +23,7 @@ Kin’s vision is to create an ecosystem of apps where value is exchanged in Kin
 
 ![](https://lh4.googleusercontent.com/tLI12K6_jvIMorJndaquxhNHC7be-jes1TXs4YcVDukdE_c7R2XKYU2N4_DITnU4h2Lw71pLvpb-i0FA5k3kc2XbJLd4udoru8Tbg2v-LWOJpyfDHpkuywrLWfxsvAVCSNn16J0s)
 
-# Can my app monetize with Kin?
+## Can my app monetize with Kin?
 
 Kin is free to integrate into any app that follows these [guidelines](https://github.com/kinecosystem/rewards-engine/blob/master/current-valid-spend-guidelines.md). Kin currently supports the following SDKs.
 
@@ -40,7 +40,7 @@ Kin is free to integrate into any app that follows these [guidelines](https://gi
 -   [Go](https://github.com/kinecosystem/kin-go)
 -   [NodeJs](https://github.com/kinecosystem/kin-node)
   
-# How do the Kin SDKs work?
+## How do the Kin SDKs work?
 Currencies have been in games and apps for decades. They let your users
 
 1.  Earn (Receive currency)
@@ -90,7 +90,7 @@ Using Kin is as simple as:
 1.  Deciding on a use case for your app
 2.  Integrating an SDK
 
-# How do I get started?
+## How do I get started?
 The following resources will help you add Kin to your app.
 
 1.  [Kintegrate](/) is a developer maintained site that helps you quickly integrate Kin into your apps. We recommend [starting here](/tutorials/getting-started/) to get a broad understanding of integration.
@@ -99,6 +99,6 @@ The following resources will help you add Kin to your app.
     
 3.  Join our [Developer Discord](https://discord.gg/urqVCnNy4G) for live tech support on any issues you are stuck in
 
-# Apply for a Jumpstart Grant
+## Apply for a Jumpstart Grant
 
 Apps new to the ecosystem can apply for a grant in Kin, to help them get started and integrate into the ecosystem. The size of the grant is proportional to the size of the app joining. To learn more, send us a note detailing your application - requesting a [Jumpstart Grant](https://kin.org/catalyst-fund/).
