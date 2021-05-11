@@ -25,9 +25,10 @@ This guide is designed for:
 
 As a developer, you will need basic knowledge of:
 
-1. Git Repos
-2. Command Line Interfaces
-3. A free account on [Heroku](https://heroku.com/)
+1. [The Kin Ecosystem](/what-is-kin/) 
+2. Git Repos
+3. Command Line Interfaces
+4. A free account on [Heroku](https://heroku.com/)
 
 The server side tutorials are created on Heroku which abstracts services on AWS. However, the server code can easily be ported anywhere.
 
