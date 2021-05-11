@@ -45,8 +45,10 @@ Currencies have been in games and apps for decades. They let your users
 
 1.  Earn (Receive currency)
 2.  Spend (Send currency)
+
+<img src="https://miro.medium.com/max/1000/0*K5DCY0vvs9SWFMDd.gif">
     
-At the heart of it all, this is what your user will be doing in your app. The SDKs connect your app to Kin’s blockchain and handle all the [complicated business in the middle](https://docs.kin.org/kin-architecture-overview), so all you have to think about is:
+At the heart of it all, this is what your users will be doing in your app. The difference between a regular in-app currency and Kin is that Kin is a currency with actual value. The SDKs connect your app to Kin’s blockchain and handle all the [complicated business in the middle](https://docs.kin.org/kin-architecture-overview), so all you have to think about is:
 
 1.  Sending Kin
 2.  Receiving Kin
