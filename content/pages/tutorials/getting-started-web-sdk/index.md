@@ -33,19 +33,18 @@ We're creating a new instance of our Kin wrapper and pass in the environment. In
 
 ```typescript
 // Import the client
-import { KinClient, KinProd } from '@kin-sdk/client'
+import { KinClient, KinTest } from '@kin-sdk/client'
 // Create instance of client
-const client = new KinClient(KinProd)
+const client = new KinClient(KinTest)
 ```
-
 
 The first thing you need to do is import the `KinClient` and environment (`KinProd` or `KinTest`) into your project, and initialize a new instance of the client:
 
 ```typescript
 // Import the client
-import { KinClient, KinProd } from '@kin-sdk/client'
+import { KinClient, KinTest } from '@kin-sdk/client'
 // Create instance of client
-const client = new KinClient(KinProd)
+const client = new KinClient(KinTest)
 ```
 
 ### Step 3: Generate a new key pair
@@ -78,10 +77,19 @@ The next step is resolving the token accounts. A token account is where the Kin 
 
 ```typescript
 // Resolve token Accounts
-const accounts = await client.resolveTokenAccounts(account.publicKey)
+const [result, error] = await client.resolveTokenAccounts(account.publicKey)
 ```
 
-### Step 6: Submit a payment.
+### Step 6: Request Airdrop (Test network only)
+
+In order to have some Kin to play with on the Test network, you can request an airdrop.
+
+```typescript
+// Request airdrop Accounts
+const [result, error] = await client.requestAirdrop(account.publicKey, '1000')
+```
+
+### Step 7: Submit a payment.
 
 After this is done, you are ready to submit a payment.
 
