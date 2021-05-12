@@ -39,7 +39,7 @@ Kin can work in many situations, and once set up, a developer can just call the 
 
 > There is no limit to what you can do with Kin as a developer.
 
-![](https://lh4.googleusercontent.com/tLI12K6_jvIMorJndaquxhNHC7be-jes1TXs4YcVDukdE_c7R2XKYU2N4_DITnU4h2Lw71pLvpb-i0FA5k3kc2XbJLd4udoru8Tbg2v-LWOJpyfDHpkuywrLWfxsvAVCSNn16J0s)
+![](https://lh5.googleusercontent.com/RGrVD3e8abzw0jVRIZn24VOnAuW-Ko1AgkRVDyKJ08XBOQqs20B1-9KzdB_ZYFQS-3PQM3drr_FZg52eTYUm2X4x4TU2_SvOyGF5WBGYQsI-HfLjfXji7b5CnWajvT_zF-qtgT7e)
 
 ## Can my app monetize with Kin?
 
