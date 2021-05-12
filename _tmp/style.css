@@ -796,11 +796,6 @@ nav ul li a.active {
   width: auto !important;
 }
 
-.text-align-center {
-  display: flex;
-  justify-content: center;
-}
-
 .dark input {
   --tw-text-opacity: 1;
   color: rgba(156, 163, 175, var(--tw-text-opacity));
