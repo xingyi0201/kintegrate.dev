@@ -25,7 +25,7 @@ Make sure you have read [Getting Started](/tutorials/getting-started/) and have 
 pip install kin-sdk-v2
 ```
 
-#### 2. Create a Python app and add the [kin.py](https://github.com/xingyi0201/kin-starter-python/blob/master/kin.py) class to your app
+#### 2. Create a Python app and add the [kin.py](https://github.com/kintegrate/kin-starter-python/blob/main/kin.py) class to your app
 
 This class abstracts some calls to Kin's official SDK and is fully usable out of the box. However, you can easily extend it to suite your custom needs.
 
@@ -45,6 +45,6 @@ kin = Kin(Environment.TEST)
 
 A demo App is included that you can run and test. To use the app:
 
-1. Pull https://github.com/xingyi0201/kin-starter-python into a local folder
+1. Pull https://github.com/kintegrate/kin-starter-python into a local folder
 2. Access the `/main.py` file on your local.
 3. Use this code to test available methods
