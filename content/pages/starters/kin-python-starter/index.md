@@ -10,7 +10,6 @@ eleventyNavigation:
 ---
 
 
-This section is being worked on and is coming soon.
 ## Introduction
 
 This will get your Python app Kin enabled in a few minutes. All you need to do is add a simple class file to your app, and you should be able to make calls to Kin's blockchain immediately.
