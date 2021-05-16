@@ -8,15 +8,43 @@ if (window.netlifyIdentity) {
   })
 }
 
+const themeKey = '@@_THEME'
+const defaultTheme = 'dark'
+
+function getTheme() {
+  const theme = localStorage.getItem(themeKey)
+  if (!theme) {
+    localStorage.setItem(themeKey, defaultTheme)
+    return defaultTheme
+  }
+  return theme
+}
+
+function isDarkTheme() {
+  return document.body.classList.contains('dark')
+}
+
+function setTheme() {
+  const theme = getTheme()
+
+  if (theme === 'light' && isDarkTheme()) {
+    document.body.classList.remove('dark')
+  }
+  if (theme === 'dark' && !isDarkTheme()) {
+    document.body.classList.add('dark')
+  }
+}
+
+function toggleTheme() {
+  localStorage.setItem(themeKey, getTheme() === 'dark' ? 'light' : 'dark')
+  setTheme()
+}
+
 document.addEventListener('DOMContentLoaded', function () {
   const el = document.getElementById('main')
   el.addEventListener('click', closeNavigation, false)
 
-  if (localStorage.getItem('darkmode') === 'true') {
-    document.body.classList.add('dark')
-  } else {
-    document.body.classList.remove('dark')
-  }
+  setTheme()
 })
 
 function logout() {
@@ -44,16 +72,6 @@ function closeNavigation() {
   const navigation = document.getElementById('navigation')
   navigation.classList.add('hidden')
   navigation.classList.remove('absolute', 'right-0', 'z-50', 'bg-gray-100', 'border-r', 'border-gray-800')
-}
-
-function activateDarkMode() {
-  if (localStorage.getItem('darkmode') === 'true') {
-    localStorage.setItem('darkmode', 'false')
-    document.body.classList.remove('dark')
-  } else {
-    localStorage.setItem('darkmode', 'true')
-    document.body.classList.add('dark')
-  }
 }
 
 function toggleLayout(state) {
