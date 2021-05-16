@@ -1,28 +1,10 @@
-# Kintegrate
+# Kintegrate.dev
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/68791233-b2d6-4a86-8c42-e654e112a157/deploy-status)](https://app.netlify.com/sites/spacebook-app/deploys)
-
-Create your own spacebook and customize it to your needs. Kintegrates are speedy to set up, free, and 100% open source. Kintegrates are modern notebooks you can use to create documentation, sketch out new ideas, build a simple website, or whatever suits your fancy.
-
----
-
-<p align="center">
-<strong><big>Demo and documentation:</big></strong><br /> 
-</p>
-
-<p align="center">
-<strong>https://spacebook.app</strong> <br />
-</>
-
-<p align="center">
-🙋 💥 👩🏽‍🚀 🚀 👨‍🚀 🛰️
-</p>
-
----
+Kintegrate.dev is a community-developer project with practical tutorials and start kits that help you to easily integrate the Kin blockchain in your apps.
 
 ## Contributing
 
-If you want to contribute or make fixes to spacebook, it is best to fork this repository directly and submit pull requests against it. If you spot a typo on the demo/documentation site, you can also open a fork directly from the edit button on the top of each page.
+If you want to contribute or make fixes to Kintegrate.dev, it is best to fork this repository directly and submit pull requests against it. If you spot a typo on the demo/documentation site, you can also open a fork directly from the edit button on the top of each page.
 
 ## Install spacebook
 
@@ -44,7 +26,7 @@ node --version
 ### Step one
 
 ```
-git clone https://github.com/broeker/spacebook
+git clone https://github.com/kintegrate/kintegrate.dev
 ```
 
 ### Step two
@@ -52,23 +34,27 @@ git clone https://github.com/broeker/spacebook
 Install the site and run an initial build command:
 
 ```
-cd spacebook
+cd kintegrate.dev
 
-npm install
+yarn install
 
-npm run build (only necessary the first time!)
+yarn build (only necessary the first time!)
 ```
 
-_If you get errors here, double check your node version!_
+_If you get errors here, double-check your node version!_
 
 ### Step three
 
 Now spin up your local server to see your site!
 
 ```
-npm run start
+yarn start
 ```
 
-This command will start a local server and you'll be able to work on your site with hot reloads and some nice Browsersync features. 💥
+This command will start a local server, and you'll be able to work on your site with hot reloads and some nice Browsersync features. 💥
 
 ---
+
+# Talk to us!
+
+If you have issues getting started with this project, get in touch on [Discord](https://discord.gg/kdRyUNmHDn).
