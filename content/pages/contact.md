@@ -1,6 +1,5 @@
 ---
-layout: layouts/contact.njk
-title: Send a message
+title: Contact Us
 section: contact
 date: Last Modified
 permalink: /contact/index.html
@@ -10,8 +9,8 @@ eleventyNavigation:
   title: Contact
 ---
 
-## Contact us
-
 We welcome all feedback.
 
-Visit our [github](https://github.com/kintegrate/kintegrate.dev/blob/main/CONTRIBUTING.md) for details on how to reach us
+If you have issues getting started with this project, get in touch on [Discord](https://discord.gg/kdRyUNmHDn).
+
+Visit our [github](https://github.com/kintegrate/kintegrate.dev/blob/main/CONTRIBUTING.md) for details on how to contribute to this site.
