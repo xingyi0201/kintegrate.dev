@@ -1,4 +1,5 @@
 const autoprefixer = require('autoprefixer')
+const colors = require('tailwindcss/colors')
 
 module.exports = {
   important: true,
@@ -19,6 +20,9 @@ module.exports = {
       center: true,
     },
     extend: {
+      colors: {
+        gray: colors.trueGray,
+      },
       typography: {
         DEFAULT: {
           css: {
