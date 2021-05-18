@@ -46,7 +46,7 @@ In this example, we're going to create a new wallet for both Alice and Bob by ge
 
 #### 4. Create account for Alice
 
-We create a new private key-pair for Alice, then call into our wrapper to create a new account. After creation, we log out the public address of both the wallet, and the token accounts
+We create a new private key-pair for Alice, then call into our wrapper to create a new account. After creation, we log out the public address of both the wallet, and the balances
 
 ```python
 private_key_alice = Kin.generate_key()
@@ -70,7 +70,7 @@ for token_account in token_accounts_bob:
 
 #### 5. Add Helper method
 
-Creating the Account on the Solana Blockchain and later the Kin token account, might take a few seconds. To address for this, we will have several 15 seconds sleep periods as it's an easy way to delay things in our code.
+Creating the Account on the Solana Blockchain and later the Kin 'token account', might take a few seconds. To address for this, we will have several 15 seconds sleep periods as it's an easy way to delay things in our code.
 
 We also use this helper method to print the balance after sleeping.
 
@@ -90,7 +90,7 @@ sleep_and_print_balances()
 
 #### 6. Request Airdrop
 
-We can now request and Airdrop for both of our token accounts. Note that this is only for the `Test` network.
+We can now request and Airdrop for both of our balances. Note that this is only for the `Test` network.
 
 In this example we'll request 10 Kin for both Alice and Bob.
 

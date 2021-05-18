@@ -62,7 +62,7 @@ const account = KinClient.createWallet('create', { name: 'Account 1' })
 
 Use the `secret` of the account you generated in the previous step to create the account on the blockchain.
 
-> Creating the account may take a little while (up to 30 seconds, possibly longer on a busy moment) after the `result` above has been returned. You can use the `resolveTokenAccounts` method (see next step) to make sure the account is in fact created. As soon as the account is created correctly, the `resolveTokenAccounts` method will return the address with the balance.
+> Creating the account may take a little while (up to 30 seconds, possibly longer on a busy moment) after the `result` above has been returned. You can use the `getBalances` method (see next step) to make sure the account is in fact created. As soon as the account is created correctly, the `getBalances` method will return the address with the balance.
 
 ```typescript
 const [result, error] = await client.createAccount(account.secret)
@@ -71,13 +71,13 @@ if (error) {
 }
 ```
 
-### Step 5: Resolve token Accounts
+### Step 5: Get Balances
 
-The next step is resolving the token accounts. A token account is where the Kin is actually stored, as Kin is a token on the Solana blockchain. You can [read more details here](https://docs.kin.org/solana#token-accounts).
+The next step is resolving the balances. A 'balance' (or 'token account') is where the Kin is actually stored, as Kin is a token on the Solana blockchain. You can [read more details here](https://docs.kin.org/solana#token-accounts).
 
 ```typescript
-// Resolve token Accounts
-const [result, error] = await client.resolveTokenAccounts(account.publicKey)
+// Get Balances
+const [result, error] = await client.getBalances(account.publicKey)
 ```
 
 ### Step 6: Request Airdrop (Test network only)
@@ -97,7 +97,7 @@ The memo field here is optional, the other fields are required.
 
 ```typescript
 const secret = account.secret
-const tokenAccount = account.publicKey
+const balance = account.publicKey
 const amount = '1'
 const destination = 'Don8L4DTVrUrRAcVTsFoCRqei5Mokde3CV3K9Ut4nAGZ'
 const memo = 'One Kin as a Donation'
