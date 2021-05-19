@@ -9,7 +9,6 @@ eleventyNavigation:
   title: iOS
 ---
 
-
 ## Introduction
 
 This tutorial will take you through the basics of creating a Kin enabled app using Swift.
@@ -19,6 +18,7 @@ This tutorial will take you through the basics of creating a Kin enabled app usi
 Make sure you have read [Getting Started](/tutorials/getting-started/) and have the required environment variables
 
 ## Implementing Kin in your app
+
 1. Make sure your project is set up for [cocoapods](https://guides.cocoapods.org/using/using-cocoapods.html)
 
 2. Add the Kin SDK to your [Podfile](https://github.com/kintegrate/kin-starter-ios/blob/main/Podfile)
@@ -35,7 +35,7 @@ Make sure you have read [Getting Started](/tutorials/getting-started/) and have 
 
 5. Instantiate the class in any `class`.
    - Instantiation requires several variables from the getting started section:
-   ```swift 
+   ```swift
    let kin = Kin(
       isProduction: false,
       appIndex: 165, //Your App Index
@@ -49,8 +49,8 @@ Make sure you have read [Getting Started](/tutorials/getting-started/) and have 
          // Handle payment
       }
     )
-    ```
-      - The `app index` and `public address` are used by the Kin foundation to track blockchain transactions your app makes, and also authorize fee-less transactions for your app.
+   ```
+   - The `app index` and `public address` are used by the Kin foundation to track blockchain transactions your app makes, and also authorize fee-less transactions for your app.
 6. See [ViewController.swift](https://github.com/kintegrate/kin-starter-ios/blob/main/kin-starter-ios/ViewController.swift) for instantiation and sample calls
 
 Congratulations! You now have a Kin enabled app running!
@@ -71,7 +71,7 @@ kin.address()
 
 During instantiation, you passed two closures to your app. Here is a sample implementation of these closures:
 
-```swist
+```swift
 onBalanceChanged: { [weak self] balance in
     // Handle balance update
     print("Balance was updated to: \(balance)")
