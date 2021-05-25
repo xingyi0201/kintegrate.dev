@@ -10,40 +10,31 @@ eleventyNavigation:
 ---
 
 
-## Introduction
+## Starter app
 
-This will get your Go app Kin enabled in a few minutes. All you need to do is add a simple class file to your app, and you should be able to make calls to Kin's blockchain immediately.
+We have created a starter app that you can run and test. To use the app:
 
-## Requirements
-
-Make sure you have read [Getting Started](/tutorials/getting-started/) and have the required environment variables
-
-#### 1. Install the Kin SDK for GO to your project:
+### 1. Clone the repo
 
 ```shell
-go get -u github.com/kinecosystem/kin-go
+git clone https://github.com/kintegrate/kin-starter-go
+cd kin-starter-go
 ```
 
-#### 2. Create a Go app and add the [kinsdk.go](https://github.com/kintegrate/kin-starter-go/blob/main/kinsdk/kinsdk.go) package to your app
+### 2. Install the dependencies
 
-This package abstracts some calls to Kin's official SDK and is fully usable out of the box. However, you can easily extend it to suite your custom needs.
-
-#### 3. Instantiate a new Kin client
-
-We're creating a new instance of our Kin wrapper and pass in the environment. In this example we'll pick the Test network.
-
-```go
-// Set up Kin client
-k, err := kinsdk.New(client.EnvironmentTest)
+```shell
+go mod download
 ```
 
-### Congratulations! You now have a Kin enabled app running!
+### 3. Run the demo
 
+```shell
+go run main.go
+```
 
-## Demo App
+## What's next?
 
-A demo App is included that you can run and test. To use the app:
+You can read the [Getting Started - Go](/tutorials/getting-started-go-sdk/) to read how you can integrate the `kin-go` SDK in your own apps.
 
-1. Pull https://github.com/kintegrate/kin-starter-go into a local folder
-2. Access the `/main.go` file on your local.
-3. Use this code to test available methods
+If you have questions or want to talk about how to integrate Kin, please join our [discord channel](https://discord.gg/kdRyUNmHDn).
