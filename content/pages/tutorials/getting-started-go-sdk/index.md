@@ -19,17 +19,57 @@ Make sure you have read [Getting Started](/tutorials/getting-started/) and have 
 
 ## Implementing Kin in your app
 
-#### 1. Install the Kin SDK for Go to your project:
+#### 1. Create a Go app
+
+Now navigate to where you build your projects, for me this is ~/kin-starter-go and make a folder.
 
 ```shell
-go get -u github.com/kinecosystem/kin-go
+mkdir kin-starter-go
+cd kin-starter-go
 ```
 
-#### 2. Create a Go app and add the [kinsdk.go](https://github.com/kintegrate/kin-starter-go/blob/main/kinsdk/kinsdk.go) package to your app
+#### 2. Install the Kin SDK using go.mod:
+
+Before we start adding code lets initialize our project, you should replace USERNAME with your github username, for me it is kintegrate
+
+```shell
+go mod init github.com/USERNAME/kin-starter-go
+```
+
+For now, we need to add required dependencies and download them using god.mod
+
+Copy this and paste it to your god.mod
+
+```go
+replace bitbucket.org/ww/goautoneg => github.com/adjust/goautoneg v0.0.0-20150426214442-d788f35a0315
+
+require (
+	github.com/kinecosystem/agora-common v0.70.0
+	github.com/kinecosystem/kin-go v0.6.0
+)
+```
+
+Download dependencies using the following:
+```shell
+go mod download
+```
+
+#### 3. Add the [kinsdk.go](https://github.com/kintegrate/kin-starter-go/blob/main/kinsdk/kinsdk.go) package to your app
+
+Note that you would need to make a folder, kinsdk to the project root directory and add the kinsdk.go in that folder.
 
 This package abstracts some calls to Kin's official SDK and is fully usable out of the box. However, you can easily extend it to suite your custom needs.
 
-#### 3. Instantiate a new Kin client
+#### 4. Instantiate a new Kin client
+
+Create a new source file, main.go
+
+```go
+package main
+
+func main() {
+}
+```
 
 We're creating a new instance of our Kin wrapper and pass in the environment. In this example we'll pick the Test network.
 
