@@ -56,6 +56,12 @@ A demo App is included that you can run and test. To use the app:
    yarn install
    ```
 
+- iOS
+
+```shell
+cd ios && pod install
+```
+
 4. Start Android app
 
    ```shell
